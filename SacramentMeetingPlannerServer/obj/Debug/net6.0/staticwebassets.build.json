@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vIyB9CNPdEcAfBHamMCKyHIJigVhf/FJpHkAJZSsJEo=",
+  "Source": "SacramentMeetingPlannerServer",
+  "BasePath": "_content/SacramentMeetingPlannerServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

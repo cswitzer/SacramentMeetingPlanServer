@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chase\\source\\repos\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj": {}
+    "C:\\Users\\Chase Switzer\\source\\repos\\SacramentMeetingPlanServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chase\\source\\repos\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj": {
+    "C:\\Users\\Chase Switzer\\source\\repos\\SacramentMeetingPlanServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chase\\source\\repos\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj",
+        "projectUniqueName": "C:\\Users\\Chase Switzer\\source\\repos\\SacramentMeetingPlanServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj",
         "projectName": "SacramentMeetingPlannerServer",
-        "projectPath": "C:\\Users\\Chase\\source\\repos\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj",
-        "packagesPath": "C:\\Users\\Chase\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chase\\source\\repos\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer\\obj\\",
+        "projectPath": "C:\\Users\\Chase Switzer\\source\\repos\\SacramentMeetingPlanServer\\SacramentMeetingPlannerServer\\SacramentMeetingPlannerServer.csproj",
+        "packagesPath": "C:\\Users\\Chase Switzer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chase Switzer\\source\\repos\\SacramentMeetingPlanServer\\SacramentMeetingPlannerServer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Chase\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Chase Switzer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +40,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -67,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
