@@ -1,4 +1,6 @@
-﻿namespace SacramentMeetingPlannerServer.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SacramentMeetingPlannerServer.Models
 {
     public class Member
     {

@@ -18,17 +18,17 @@ namespace SacramentMeetingPlannerServer.Data
 
             var members = new Member[]
             {
-                new Member { MemberId = 1, FullName = "Chase Switzer" },
-                new Member { MemberId = 2, FullName = "John Taylor" },
-                new Member { MemberId = 3, FullName = "Angie Smith" },
-                new Member { MemberId = 4, FullName = "Maria Garcia" },
-                new Member { MemberId = 5, FullName = "David Jones" },
-                new Member { MemberId = 6, FullName = "Mary Smith" },
-                new Member { MemberId = 7, FullName = "Bruce Lee" },
-                new Member { MemberId = 8, FullName = "James Johnson" },
-                new Member { MemberId = 9, FullName = "Sam Richter" },
-                new Member { MemberId = 10, FullName = "Nancy Chen" },
-                new Member { MemberId = 11, FullName = "Paul Henry" },
+                new Member { FullName = "Chase Switzer" },
+                new Member { FullName = "John Taylor" },
+                new Member { FullName = "Angie Smith" },
+                new Member { FullName = "Maria Garcia" },
+                new Member { FullName = "David Jones" },
+                new Member { FullName = "Mary Smith" },
+                new Member { FullName = "Bruce Lee" },
+                new Member { FullName = "James Johnson" },
+                new Member { FullName = "Sam Richter" },
+                new Member { FullName = "Nancy Chen" },
+                new Member { FullName = "Paul Henry" },
             };
 
             foreach(Member m in members)
