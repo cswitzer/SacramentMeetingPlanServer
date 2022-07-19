@@ -84,7 +84,7 @@ namespace SacramentMeetingPlannerServer.Controllers
         // POST: api/SacramentMeetingPlans
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<SacramentMeetingPlan>> PostSacramentMeetingPlan(SacramentMeetingPlan sacramentMeetingPlan)
+        public async Task<ActionResult<SacramentMeetingPlan>> PostSacramentMeetingPlan([Bind("ConductingLeaderId", "OpeningPrayerId", "SacramentPrayerId", "ClosingPrayerId", "OpeningHymnId", "SacramentHymnId", "IntermediateHymnId", "ClosingHymnId")] SacramentMeetingPlan sacramentMeetingPlan)
         {
           if (_context.SacramentMeetingPlan == null)
           {

@@ -42,15 +42,15 @@ namespace SacramentMeetingPlannerServer.Migrations
                 {
                     SacramentMeetingPlanId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    OpeningHymnId = table.Column<int>(type: "int", nullable: false),
-                    SacramentHymnId = table.Column<int>(type: "int", nullable: false),
-                    IntermediateHymnId = table.Column<int>(type: "int", nullable: true),
-                    ClosingHymnId = table.Column<int>(type: "int", nullable: false),
                     ConductingLeaderId = table.Column<int>(type: "int", nullable: false),
                     OpeningPrayerId = table.Column<int>(type: "int", nullable: false),
                     SacramentPrayerId = table.Column<int>(type: "int", nullable: false),
                     ClosingPrayerId = table.Column<int>(type: "int", nullable: false),
-                    Time = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    OpeningHymnId = table.Column<int>(type: "int", nullable: false),
+                    SacramentHymnId = table.Column<int>(type: "int", nullable: false),
+                    IntermediateHymnId = table.Column<int>(type: "int", nullable: true),
+                    ClosingHymnId = table.Column<int>(type: "int", nullable: false),
+                    MeetingTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -112,8 +112,8 @@ namespace SacramentMeetingPlannerServer.Migrations
                     SpeakerId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     MemberId = table.Column<int>(type: "int", nullable: false),
-                    SacramentMeetingPlanId = table.Column<int>(type: "int", nullable: false),
-                    Topic = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Topic = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SacramentMeetingPlanId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

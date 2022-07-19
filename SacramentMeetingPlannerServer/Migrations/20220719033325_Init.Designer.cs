@@ -12,14 +12,14 @@ using SacramentMeetingPlannerServer.Data;
 namespace SacramentMeetingPlannerServer.Migrations
 {
     [DbContext(typeof(SacramentMeetingPlannerServerContext))]
-    [Migration("20220713035229_Init")]
+    [Migration("20220719033325_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.6")
+                .HasAnnotation("ProductVersion", "6.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -82,6 +82,9 @@ namespace SacramentMeetingPlannerServer.Migrations
                     b.Property<int?>("IntermediateHymnId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("MeetingTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("OpeningHymnId")
                         .HasColumnType("int");
 
@@ -93,9 +96,6 @@ namespace SacramentMeetingPlannerServer.Migrations
 
                     b.Property<int>("SacramentPrayerId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("Time")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("SacramentMeetingPlanId");
 
